@@ -42,7 +42,7 @@ Built with Flask for the backend and plain HTML/CSS/JavaScript for the frontend.
    ```
 2. Open your browser and navigate to  
    ```
-   http://localhost:5000
+   http://localhost:5001
    ```
 
 The page will display a 3×3 Tic-Tac-Toe grid. Click an empty cell to make your move (X). The AI will respond automatically (O).
