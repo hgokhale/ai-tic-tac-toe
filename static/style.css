@@ -1,0 +1,107 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 2rem;
+  background-color: #ffffff;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#controls label,
+#controls select,
+#controls input,
+#controls button {
+  font-size: 1rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#controls input[type="number"] {
+  width: 4rem;
+}
+
+#controls select {
+  min-width: 8rem;
+}
+
+#board {
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.cell {
+  background: #e0e0e0;
+  border: 1px solid #333;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+.cell.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+}
+
+/* Theme: Pastel Pink */
+.theme-pink .cell {
+  background: #ff99aa;
+  border-color: #ff6677;
+}
+body.theme-pink {
+  background-color: #fff0f4;
+}
+
+/* Theme: Pastel Blue */
+.theme-blue .cell {
+  background: #b3d4ff;
+  border-color: #80b1ff;
+}
+body.theme-blue {
+  background-color: #f0f6ff;
+}
+
+/* Theme: Pastel Green */
+.theme-green .cell {
+  background: #4caf50;
+  border-color: #388e3c;
+}
+body.theme-green {
+  background-color: #f1fff1;
+}
+
+/* Theme: Pastel Yellow */
+.theme-yellow .cell {
+  background: #ffe680;
+  border-color: #ffcc33;
+}
+body.theme-yellow {
+  background-color: #fffef0;
+}
+
+/* Theme: Pastel Purple */
+.theme-purple .cell {
+  background: #ccbbff;
+  border-color: #aa99ff;
+}
+body.theme-purple {
+  background-color: #f6f0ff;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Tic-Tac-Toe</h1>
+  <div id="controls">
+    <span>Mode:</span>
+    <label><input type="radio" name="mode" value="ai"> Single player</label>
+    <label><input type="radio" name="mode" value="2p" checked> Two player</label>
+    <label>Theme:
+      <select id="theme-select">
+        <option value="default">Default</option>
+        <option value="pink">Pastel Pink</option>
+        <option value="blue">Pastel Blue</option>
+        <option value="green">Pastel Green</option>
+        <option value="yellow">Pastel Yellow</option>
+        <option value="purple">Pastel Purple</option>
+      </select>
+        </label>
+    <label>Size:
+      <input id="size-input" type="number" min="3" max="10" value="3">
+    </label>
+    <button id="reset">Reset</button>
+  </div>
+  <div id="board"></div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
